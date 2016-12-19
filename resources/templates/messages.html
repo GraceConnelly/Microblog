@@ -1,14 +1,19 @@
+<!doctype html>
 <html>
-<body>
-<form action="/create-message" method="post">
-    <input type="text" placeholder="Write a message" name="message"/>
-    <button type="submit">Submit</button>
-</form>
-Messages by {{name}}:<br/>
-<ol>
-    {{#messages}}
-    <li>{{.}}</li>
-{{/messages}}
-</ol>
+<head>
+    <title>Individualist MicroBlogJournal</title>
+</head>
+<body style="color:#204040;">
+    <h1 style="color:#204040; background-color:#c0c0c0">{{name}}, Welcome to Your Individualist MicroBlogJournal Thing</h1>
+    <form action="/create-message" method="post">
+        <input type="text" placeholder="Write a message" maxlength="140" name="message"/>
+        <button type="submit">Submit</button>
+    </form>
+    Messages by {{name}}:<br/>
+    <ol style="color:#406060; background-color:#202020">
+        {{#messages}}
+        <li>{{.}}</li>
+        {{/messages}}
+    </ol>
 </body>
 </html>

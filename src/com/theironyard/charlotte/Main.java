@@ -24,7 +24,6 @@ public class Main {
                         m.put("name", user.name);
                         m.put("messages",user.messages);
                         return new ModelAndView(m, "messages.html");
-
                     }
                 }),
                 new MustacheTemplateEngine()
@@ -57,7 +56,5 @@ public class Main {
                     return "";
                 })
         );
-
-
     }
 }
